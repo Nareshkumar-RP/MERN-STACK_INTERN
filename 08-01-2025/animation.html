@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>button glow animation</title>
+        <style>
+            body{
+                font-family: 'Times New Roman', times, ;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                height:100vh;
+                background: linear-gradient(red,orange,yellow);
+            }
+            .glow{
+                border: none;
+                background:whitesmoke ;
+                border-color: rgb(0, 0, 0);
+                border-radius: 50px ;
+                height:50px;
+                width:100px;
+            }
+            .glow:hover{
+                
+                
+                transform:translateY(-6px);
+                box-shadow: 10px 10px 22px rgb(189, 47, 135);
+
+            }
+        </style>
+    </head>
+    <body>
+        <button class ="glow">click here</button>
+    </body>
+</html>

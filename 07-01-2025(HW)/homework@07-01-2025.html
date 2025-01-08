@@ -1,0 +1,210 @@
+<html>
+    <head>
+        <title>BEN-10</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background:linear-gradient(to top,rgb(45, 115, 29) ,rgba(56, 164, 58, 0.777), rgb(46, 122, 44) );
+                margin: 0;
+                padding: 0;
+            }
+
+            h1 {
+                text-align: center;
+                color: #f7eaea; 
+                margin-top: 20px;
+                font-size: 36px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+
+            .container {
+                display: flex;
+                justify-content: space-between;
+                padding: 20px;
+                gap: 20px;
+            }
+
+            .house {
+                flex: 1;
+                padding: 10px;
+                border: 3px solid #1a6f1a; 
+                border-radius: 10px;
+                background-color: #65db65; 
+                position: relative;
+            }
+
+            h2 {
+                text-align: center;
+                color: #ddeadd;
+                font-size: 28px;
+                margin-bottom: 15px;
+                text-decoration: underline;
+                text-transform: uppercase;
+            }
+
+            .characters, .aliens {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                gap: 15px;
+                justify-items: center;
+            }
+
+            .img-container {
+                position: relative;
+                width: 100%;
+                height: 200px;
+                overflow: hidden;
+                border-radius: 8px;
+            }
+
+            .img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 8px;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                border: 2px solid #394839;
+            }
+
+            .img:hover {
+                transform: scale(1.1);
+                box-shadow: 3px 8px 15px rgba(182, 172, 172, 0.2);
+                border-color: #ffffff; 
+            }
+
+            .house:hover {
+                background-color: #143c14; 
+            }
+
+            .name {
+                position: absolute;
+                bottom: 10px;
+                left: 50%;
+                transform: translateX(-50%);
+                color: rgb(234, 233, 233);
+                font-size: 18px;
+                font-weight: bold;
+                text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+                opacity: 0;
+                transition: opacity 0.3s ease;
+            }
+
+            .img-container:hover .name {
+                opacity: 1;
+            }
+
+            footer {
+                text-align: center;
+                padding: 10px;
+                background: #49a744;
+                color: white;
+                font-weight: bold;
+            }
+
+            @media (max-width: 600px) {
+                .container {
+                    flex-direction: column;
+                }
+                .characters, .aliens {
+                    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Ben 10</h1>
+        <div class="container">
+            <div class="house">
+                <h2>Main Characters</h2>
+                <div class="characters">
+                    <div class="img-container">
+                        <img class="img" src="https://i.pinimg.com/originals/a6/89/f7/a689f7de53d8a66c89c460893059bd52.jpg" alt="Ben 10">
+                        <div class="name">Ben 10</div>
+                    </div>
+                    <div class="img-container">
+                        <img class="img" src="https://i.pinimg.com/originals/83/ea/8f/83ea8f73de8257da61dd3cf3771e1a8a.jpg" alt="Gwen">
+                        <div class="name">Gwen</div>
+                    </div>
+                    <div class="img-container">
+                        <img class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsD_JBYEdj8GoIwzMh7cEqp-X0c0NgmccTdf0CjNhiIv1a19qzzgf4TdOpGleJpNZiogw&usqp=CAU" alt="Grandpa Max">
+                        <div class="name">Grandpa Max</div>
+                    </div>
+                    <div class="img-container">
+                        <img class="img" src="https://i.pinimg.com/736x/bf/ac/74/bfac749709b6d5b933409bbc392e04ca.jpg" alt="Kevin">
+                        <div class="name">Kevin</div>
+                    </div>
+                    <div class="img-container">
+                        <img class="img" src="https://i.pinimg.com/736x/87/01/31/8701319eba3d3312c741afeb3f520c92.jpg" alt="Vilgax">
+                        <div class="name">Vilgax</div>
+                    </div>
+                    <div class="img-container">
+                        <img class="img" src="https://i.pinimg.com/736x/a1/54/18/a15418385a6105c8f046ae9b210b7002.jpg" alt="Azmuth">
+                        <div class="name">Azmuth</div>
+                    </div>
+                    <div class="img-container">
+                        <img class="img" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSRUg333ELZRAUAvL-AXVq-Y-j-Hn7ha4J_2_rbqJhnLWarAlkK" alt="Dr. Animo">
+                        <div class="name">Dr. Animo</div>
+                    </div>
+                    <div class="img-container">
+                        <img class="img" src="https://preview.redd.it/what-are-your-headcanons-on-tetrax-shard-v0-ixrj207kyt2c1.jpg?auto=webp&s=07f44fb6727a8126a6a697d64295fdfdba60e22b" alt="Tetrax Shard">
+                        <div class="name">Tetrax Shard</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="house">
+                <h2>Classic Aliens</h2>
+                <div class="aliens">
+                    <div class="img-container">
+                        <img class="img" src="https://i.pinimg.com/736x/8a/f8/02/8af802113908999f76c6e8c7f568ca94.jpg" alt="Heatblast">
+                        <div class="name">Heatblast</div>
+                    </div>
+                    <div class="img-container">
+                        <img class="img" src="https://i.pinimg.com/280x280_RS/35/c1/38/35c13887e3439f94698ae0f8de5170fa.jpg" alt="Diamondhead">
+                        <div class="name">Diamondhead</div>
+                    </div>
+                    <div class="img-container">
+                        <img class="img" src="https://i.pinimg.com/736x/c9/95/c8/c995c8cb1e91675537d77063cf5bf46c.jpg" alt="Wildmutt">
+                        <div class="name">Wildmutt</div>
+                    </div>
+                    <div class="img-container">
+                        <img class="img" src="https://i.pinimg.com/550x/38/65/70/386570015965adac3c76c9b01155c5cd.jpg" alt="XLR8">
+                        <div class="name">XLR8</div>
+                    </div>
+                    <div class="img-container">
+                        <img class="img" src="https://i.pinimg.com/236x/4f/a5/67/4fa5678588cf62b37671c0a7075ce1b1.jpg" alt="Grey Matter">
+                        <div class="name">Grey Matter</div>
+                    </div>
+                    <div class="img-container">
+                        <img class="img" src="https://i.pinimg.com/474x/db/41/a0/db41a0d0cac0f81f839bca472dc2c31f.jpg" alt="Four Arms">
+                        <div class="name">Four Arms</div>
+                    </div>
+                    <div class="img-container">
+                        <img class="img" src="https://i.pinimg.com/564x/e4/b1/e4/e4b1e4b792d114e8b1f4c05d7e287982.jpg" alt="Stinkfly">
+                        <div class="name">Stinkfly</div>
+                    </div>
+                    <div class="img-container">
+                        <img class="img" src="https://i.pinimg.com/474x/29/9c/f9/299cf9534c3b15da927f2f6a76389a6e.jpg" alt="Ripjaws">
+                        <div class="name">Ripjaws</div>
+                    </div>
+                    <div class="img-container">
+                        <img class="img" src="https://i.pinimg.com/736x/23/4e/58/234e58d7ab8637603e3308a77124dc2a.jpg" alt="Upgrade">
+                        <div class="name">Upgrade</div>
+                    </div>
+                    <div class="img-container">
+                        <img class="img" src="https://i.pinimg.com/originals/b4/16/46/b41646896e44056937351dea66fbae3c.jpg" alt="Ghostfreak">
+                        <div class="name">Ghostfreak</div>
+                    </div>
+                    <div class="img-container">
+                        <img class="img" src="https://i.pinimg.com/originals/06/0e/54/060e54cf344f0c1812196831c409e764.jpg" alt="Cannonbolt">
+                        <div class="name">Cannonbolt</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2025 Responsive Design. All rights Provided</p>
+        </footer>
+    </body>
+</html>
